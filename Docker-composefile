@@ -8,6 +8,8 @@ services:
 
   nginx:
     image: nginx
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
     ports:
       - "8083:80"
 
